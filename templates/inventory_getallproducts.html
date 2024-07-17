@@ -1,0 +1,10 @@
+<h2>ALL SAVED PRODUCTS</h2>
+<form method="post">
+    {%for data in obj_get%}
+    {{data.name}} <br/>
+    {{data.sku}} <br/>
+    {{data.price}} <br/>
+    {{data.quantity_in_stock}} <br/>
+    <hr/>
+    {%endfor%}
+</form>
